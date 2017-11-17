@@ -7,7 +7,7 @@ namespace FearServer.Modules
 {
     public class StepsModule : NancyModule
     {
-        private const string Pincode = "9723";
+        private const string Pincode = "8";
         private const string Password = "poniesaresocute";
         private const string FinalAnswer = "42";
 
