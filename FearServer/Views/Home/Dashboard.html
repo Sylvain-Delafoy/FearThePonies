@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Secret battle plan to take over the world</title>
+    <title>Plan de bataile secret pour conquérir le monde</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/Content/favicon-16x16.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous" />
     <link rel="stylesheet" href="/Content/css/lib/toastr.min.css" />
@@ -18,7 +18,7 @@
                     <div class="circular-pinkie pull-right"></div>
                 </div>
                 <div class="col-xs-10">
-                    <h1>Go! Go! Let's go!!!!!</h1>
+                    <h1>Allez! Allez! On y va!!!!!</h1>
                     <p>
                         <div id="countdown">
                         </div>
@@ -45,7 +45,7 @@
         @EndEach
 
         var scores = [{
-            label: "Steps",
+            label: "Étapes",
             data: scores,
             backgroundColor: scores.map(function(it) { return "rgba(255, 0, 0, 0.8)"; })
         }];
@@ -79,7 +79,7 @@
             var indexToUpdate = myChart.data.labels.indexOf(achievement.pseudo);
             myChart.data.datasets[0].data[indexToUpdate] = achievement.step;
             myChart.update();
-            toastr.success(achievement.pseudo + " hacked step " + achievement.step);
+            toastr.success(achievement.pseudo + " a hacké l'étape " + achievement.step);
 
         }
 
@@ -89,7 +89,7 @@
 
                 if (totalMinutes === 0 && event.lasting.seconds === 0) {
                     if (!$("#ponies").length) {
-                        $('body').append('<div style="background-color:white;position:absolute;top:0;left:0;bottom:0;right:0;z-index:100;pointer-events: none; overflow: hidden;"><div class="page-container"><div><div class="row vertical-align"><div class="col-xs-2"><div class="circular-logo pull-right"></div></div><div class="col-xs-10"><h1>You have got a message from Spymaster</h1><p class="text-xs-justify">Hahahaha we got you, ponies won this time!!!!</p></div></div></div><div id="ponies" style="position: relative;overflow:hidden;height:60px;"></div></div></div>');
+                        $('body').append('<div style="background-color:white;position:absolute;top:0;left:0;bottom:0;right:0;z-index:100;pointer-events: none; overflow: hidden;"><div class="page-container"><div><div class="row vertical-align"><div class="col-xs-2"><div class="circular-logo pull-right"></div></div><div class="col-xs-10"><h1>Vous avez un message du maitre espion</h1><p class="text-xs-justify">Hahahaha on vous a eu, les poneys ont gagné!!!!</p></div></div></div><div id="ponies" style="position: relative;overflow:hidden;height:60px;"></div></div></div>');
 
                         PonyStream.load([
                         '/Content/img/ponies/af.gif',
@@ -116,7 +116,7 @@
                         PonyStream.start(ponies);
                     }
                 } else {
-                    $(this).html('Hurry up, only ' + totalMinutes + ' minutes and ' + event.lasting.seconds + ' secondes left');
+                    $(this).html('Dépêchez-vous, il ne reste que ' + totalMinutes + ' minutes et ' + event.lasting.seconds + ' secondes');
                 }
             });
         });

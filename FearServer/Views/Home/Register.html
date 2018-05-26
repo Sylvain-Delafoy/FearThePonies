@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Secret battle plan to take over the world</title>
+    <title>Plan de bataille secret pour conquérir le monde</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/Content/favicon-16x16.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous" />
     <link rel="stylesheet" href="/Content/css/app.css" />
@@ -13,10 +13,10 @@
     <div class="page-container">
         @If.IsSuccessful
             <div class="text-xs-center">
-                Here is your auth token: <span class="code">@Model.AuthToken</span>. Don't lose it, it's needed to submit your anwser :)
+                Voici votre jeton d’identification&nbsp;: <span class="code">@Model.AuthToken</span>. Ne le perdez pas, il est nécessaire pour envoyer vos réponses :)
             </div>
             <div class="text-xs-center div-top-margin">
-                <a class="btn btn-success" href="/Step1">Let fight begin</a>
+                <a class="btn btn-success" target="_blank" href="/Step1">Commencer le combat</a>
             </div>
         @EndIf
         @IfNot.IsSuccessful
@@ -24,9 +24,9 @@
             <div class="text-xs-center div-top-margin">
                 <form class="form-inline" method="POST">
                     <div class="form-group">
-                        <label for="pseudo">Pseudo :</label>
+                        <label for="pseudo">Pseudo&nbsp;:</label>
                         <input class="form-control" id="pseudo" type="text" name="pseudo" />
-                        <button class="btn btn-success">Register</button>
+                        <button class="btn btn-success">S’inscrire</button>
                     </div>
                 </form>
             </div>
